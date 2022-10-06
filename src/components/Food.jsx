@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
+
+
+const API_URL = 'www.themealdb.com/api/json/v1/1/search.php?f=a';
+
     const Food = () => {
         const [searchTerm, setSearchTerm] = useState("");
+        const [show,setShow]=useState(false);
+        const [item,setItem]=useState("");
     
     return (
-<div>
+<div className="food">
 <div className="heading">
                 <h1>FOOD RECIPES</h1>
             </div>
