@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
     const Food = () => {
         const [searchTerm, setSearchTerm] = useState("");
-        const [movies, setMovies] = useState([]);
+    
     return (
 <div>
 <div className="heading">
