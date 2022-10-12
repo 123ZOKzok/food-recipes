@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 var id="";
 const Recipe = () => {
@@ -46,11 +45,6 @@ const Recipe = () => {
                         </div>
                     </div>
                     <div className="video">
-                       
-                            {/* setVurl(item.strYoutube)
-                                //const str=item.strYoutube.split("=");
-                                //state=str[str.length-1];
-                                //state="hj"    */}
                        
                        
                         <iframe width="

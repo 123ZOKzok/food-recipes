@@ -1,103 +1,87 @@
 *{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body{
-  font-size: var(--font-size);
-  font-family: 'Roboto', sans-serif;
-  padding-top: 55px;
-  background-color:black;
-}
-.app {
-  padding: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-h1 {
-  font-size: 3rem;
-  letter-spacing: 0.9px;
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
+  padding-top: 0px;
 }
+/* form input{
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+form{
+  text-align: center;
+  margin-top: 80px;
+} */
+
 .search {
-  width: 71%;
-  margin: 4rem 0 2rem;
-
+  width: 50%;
+  margin: 6rem 0 3rem;
   display: flex;
+  margin-right:auto;
+  margin-left:auto;
   align-items: center;
   justify-content: center;
-
-  padding: 1.5rem 1.75rem;
+  padding: .5rem .75rem;
   border-radius: 3rem;
-  background: #000000;
+  background: white;
   -webkit-box-shadow: 5px 5px 7px #030303, -5px -5px 7px #606061;
   box-shadow: 5px 5px 7px #020202, -5px -5px 7px #595a5a;
 }
-@media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
-  }
 
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  color: black;
+  background: white;
 }
 
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
 .container{
-  width: 80%;
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+  /* width: 80%;
   margin:25px auto;
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  grid-gap: 2rem;
+  grid-gap: 2rem; */
 }
+
 .card{
-  width: 180px;
-  border-radius: 1rem;
-  background-color: #030e12;
-  padding: 5px;
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  background-color: #020202;
+  box-shadow:  16px 24px 24px 24px rgba(0, 0, 0, 0.1);
 }
 .card img{
   width: 100%;
-  border-radius: 1rem 1rem 0 0;
-}
-.card h3{
-  color:white;
-  font-size: 18px;
+  height: 100%;
+  
 }
 .content img{
   width: 100%;
   height: 600px;
 }  
 .content .inner-content{
-  background-color: rgba(255,255,255,0.8);
-  color: black;
+  background-color: rgba(49, 48, 48, 0.8);
+  color: white;
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
@@ -108,7 +92,7 @@ h1 {
   box-shadow: 0 5px 5px rgba(0,0,0,05);
 }
 .recipe-details{
-  width: 70%;
+  width: 80%;
   margin:2rem auto;
   display: flex;
   justify-content: space-between;
@@ -123,7 +107,7 @@ h1 {
   font-weight: bold;
 }
 .video{
-  width: 80%;
+  width: 50%;
   margin: 3rem auto;
 }
 .indexContainer{
@@ -132,113 +116,78 @@ h1 {
 }
 .numBox {
   width: 50px;
-  height: 40px;
-  background-color: #030e12;
+  height: 50px;
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   margin: 0 5px 0 5px;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Bona Nova', serif;
+
+.nav {
+  background-color: black;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: sticky;
+  top: 0;
+ 
 }
-body{
-    background-color: #fcde67;
+
+.site-title {
+  font-size: 2.3rem;
 }
-.main{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
-.heading h1{
-    color:#030e12;
-    font-size: 48px;
-    font-weight:900;
-    letter-spacing: 1px;
-    padding-top:2rem;
-    margin: 1rem;
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.45rem;
 }
-.search-bar{
-    margin: 1rem 0;
-    width:400px;
-    height:40px;
-    border:none;
-    outline:none;
-    border-radius: 1rem;
-    padding: 0.3rem 1rem;
-} */
-/* .container{
-    width: 80%;
-    margin:25px auto;
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    grid-gap: 2rem;
+
+.nav li.active {
+  background-color: #555;
 }
-.card{
-    width: 180px;
-    border-radius: 1rem;
-    background-color: #030e12;
-    padding: 5px;
+
+.nav li:hover {
+  background-color: #777;
 }
-.card img{
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
+
+.home{
+  right: 30%;
+  padding-top: 10%;
+  color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-.card h3{
-    color:white;
-    font-size: 18px;
+.home h1{
+ 
+  align-items: center;
+  font-size: 800%;
 }
-.content img{
-    width: 100%;
-    height: 600px;
-}  
-.content .inner-content{
-    background-color: rgba(255,255,255,0.8);
-    color: black;
-    font-size: 1.5rem;
-    padding: 2rem;
-    text-align: center;
-    position: absolute;
-    top:45%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 5px 5px rgba(0,0,0,05);
+.home p{
+ display: flex;
+ right: inherit;
+ margin-top: 15%;
+ font-size: 200%;
+ align-items: center;
 }
-.recipe-details{
-    width: 70%;
-    margin:2rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.ingredients,.instructions{
-    flex-basis: 50%;
-    text-align: justify;
-}
-.ingredients h4{
-    margin-top: 1.5rem;
-    font-weight: bold;
-}
-.video{
-    width: 80%;
-    margin: 3rem auto;
-}
-.indexContainer{
-    display: flex;
-    margin: 2.5rem 0;
-}
-.numBox {
-    width: 50px;
-    height: 40px;
-    background-color: #030e12;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0 5px 0 5px;
-} */
+
+
+  
+
