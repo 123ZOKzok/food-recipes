@@ -8,6 +8,7 @@ export default function Navbar() {
       </Link>
       <ul>
         <CustomLink to="/">HOME</CustomLink>
+        
         <CustomLink to="/:recipeId">RECIPES</CustomLink>
       </ul>
     </nav>

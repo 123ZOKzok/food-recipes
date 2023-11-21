@@ -6,9 +6,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from './components/NavBar';
 
 
-
-
-
 function App() {
   return (
     <>
@@ -25,3 +22,4 @@ function App() {
       
   );
 }
+export default App;
